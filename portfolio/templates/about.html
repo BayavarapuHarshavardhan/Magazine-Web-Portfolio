@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+  #name{
+    font-family: serif;
+    font-size: 3rem;
+  }
+  .head{
+    font-family: monospace;
+    font-size: 1.9rem;
+  }
+  .study{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+  }
+  body{
+    height: 100%;
+  }
+  .bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid main_header">
+  <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+              <!-- left side div  -->
+              <div class="col-md-6 col-12 main_header_left">
+                <h1 id="name">B.Harshavardhan</h1>
+              <br>
+              <h3 class="head">About Myself:</h3>
+              <p class="study">Sophomore at NIT W pursuing Btech in Electrical Engineering and a minor degree in Computer Science Engineering<p>
+              <h3 class="head">Skills:</h3>
+              <a ><button class="bn632-hover bn26"> C++ </button></a>
+              <a ><button class="bn632-hover bn26"> DSA </button></a>
+              <a ><button class="bn632-hover bn26"> PYTHON </button></a>
+              <a ><button class="bn632-hover bn26"> JAVA </button></a>
+              <a ><button class="bn632-hover bn26"> DJANGO </button></a>
+              <a ><button class="bn632-hover bn26"> MICROSOFT-EXCEL </button></a>
+              <br>  
+              
+              <a class="fa fa-linkedin" style="font-size:58px;color :rgba(7, 117, 243, 0.958); margin:0.3em; text-decoration : none;" href="https://www.linkedin.com/in/harshavardhan-bayavarapu-b73443230/"></a>
+              <a class="fa fa-envelope" style="font-size:58px;color :rgb(255, 0, 0); margin:0.3em; text-decoration : none;" href="mailto:bayavarupuharsha@gmail.com"></a>
+              <a class="fa fa-whatsapp" style="font-size:58px;color:rgb(17, 245, 5);margin:0.3em; text-decoration : none;" href="https://wa.me/7093017534"></a>
+              <a class="fa fa-instagram" style="font-size:58px;color:red;margin:0.3em; text-decoration : none;" href="https://www.instagram.com/harsha.vardhan_b/"></a>
+              <!-- right side div  -->
+          </div>
+          <div class="col-md-6 col-12 main_header_right">
+            <a ><img src="https://i.ibb.co/pxdnwHk/puka.jpg" alt="puka" width="350px"></a>
+          </div>
+             
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

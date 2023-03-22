@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+   
+    .form{
+     background-image: url(https://neilpatel.com/wp-content/uploads/2017/06/contentlength.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     padding: auto;
+     border: 2px solid #111;
+     border-radius: 10px;
+     height: 500px;
+     width: 85%;
+     margin: auto;
+     }
+    .container-sm form .mb-3 label{
+        color:#ffffff;
+    }
+    </style>
+    <div class="container-sm" style="height: 72vh;">
+    <form class = "form" action="/update" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="title" >
+           </div>
+        <div class="mb-3">
+          <label >Description</label>
+          <input type="text" name="desc" class="form-control" id="desc" >
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            <div  class="form-text" style="color:#ffffff;">We'll never share your email with anyone else.</div>
+              </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image</label>
+          <input type="file"  id="img" name ="img" class="form-control" style="width: 250px;">
+        </div>
+        <button type="submit" id = "button"  class="btn btn-primary">Publish</button>
+      </form>
+    </div>
+{% endblock %}
